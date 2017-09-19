@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html itemscope itemtype="http://schema.org/WebPage">
 <head>
-<!-- ico for Oliver Chi -->
-	<link href="/images/oliverchi.ico" rel="shortcut icon">
+<!-- Icon for Oliver Chi -->
+	<link href="images/oliverchi.ico" rel="shortcut icon">
 
 <!-- meta information -->
 	<meta name="keywords" content="Oliver, Chi, computing, policy, politics, history, travel, resume, blog, family">
@@ -23,14 +23,51 @@
 </head>
 
 <body>
+	<!-- menus and navigation -->
+	<!-- login form, menu, and... -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <a class="navbar-brand" href="#">
+    		<img src="images/oliverchi.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    			Bootstrap
+  		</a>
+
+	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Link</a>
+	      </li>
+	      <li class="nav-item">
+	      	<div class="dropdown">
+					  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					    Dropdown
+					  </button>
+					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+					    <button class="dropdown-item" type="button">Action</button>
+					    <button class="dropdown-item" type="button">Another action</button>
+					    <button class="dropdown-item" type="button">Something else here</button>
+					  </div>
+					</div>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link disabled" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	    <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	    </form>
+	  </div>
+	</nav>
+
+	<br>
+
 	<div class="container">
-
-		<div class="page-header">
-			<!-- header and navigation -->
-			<!-- login form, menu, and -->
-			<h1>menu</h1>
-		</div>
-
 		<!-- content goes here -->
 		<div class="card-columns">
 		  <div class="card">
@@ -65,21 +102,18 @@
 		  </div>
 		</div>
 
-		<!-- footer and authorisation -->
-		<div class="page-item">
-			<h2>footer</h2>
-		</div>
-
 	</div>
 
+	<!-- footer and authorisation -->
+	<footer id="footer"></footer>
 
-	<footer class="footer"></footer>
 
 <!-- javascript -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script><!-- specially for dropdown menu -->
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/style.js"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
 </body>
 </html>
