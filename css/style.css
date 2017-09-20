@@ -8,6 +8,10 @@ img {
     max-width: 100%;
     height: auto;
 }
+img.d-block img.w-100 {
+  width: 80%;
+  height: auto;
+}
 
 /* justify the gap of navbar and its items */
 .navbar {margin-top: 0.2em;}#navbarToggler {/* justify the distance to title on navbar */margin-left: 1.5em;}.nav-item {margin-left: 1.5em;}#loginButton { margin-right: 3em;}

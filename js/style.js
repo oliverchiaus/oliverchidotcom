@@ -1,7 +1,7 @@
 /**
  *
  */
-
- //$('#dropdownMenu').on('show.bs.dropdown', function () {
-//  $('.dropdown-toggle').dropdown();
-//})
+//set carousel flash time
+ $('.carousel').carousel({
+   interval: 2000;
+ })
