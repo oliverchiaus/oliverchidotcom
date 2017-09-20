@@ -17,6 +17,7 @@
 	<title>Welcome to Oliver Chi's Home</title>
 
 <!-- style sheet -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -26,40 +27,72 @@
 	<!-- menus and navigation -->
 	<!-- login form, menu, and... -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
 	  <a class="navbar-brand" href="#">
-    		<img src="images/oliverchi.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    			Bootstrap
+    		<img src="images/oliverchi.png" width="64" height="64" class="d-inline-block align-top" alt="">
+				<img src="images/name.png" width="86" height="64" class="d-inline-block align-self" alt="">
   		</a>
 
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+	  <div class="collapse navbar-collapse" id="navbarToggler">
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="life/index.html"><strong>Life</strong><span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Link</a>
+	        <a class="nav-link" href="blog/index.html"><strong>Blog</strong></a>
+	      </li>
+				<li class="nav-item">
+	        <a class="nav-link disabled" href="#"><strong>Article</strong></a>
 	      </li>
 	      <li class="nav-item">
 	      	<div class="dropdown">
 					  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					    Dropdown
+					    <strong>Projects</strong>
 					  </button>
 					  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-					    <button class="dropdown-item" type="button">Action</button>
-					    <button class="dropdown-item" type="button">Another action</button>
-					    <button class="dropdown-item" type="button">Something else here</button>
+					    <button class="dropdown-item" type="button">Academic Paper</button>
+					    <button class="dropdown-item" type="button">Commercial Project</button>
+					    <button class="dropdown-item" type="button">Group Contribution</button>
+					    <button class="dropdown-item disabled" type="button">Self Interest</button>
 					  </div>
 					</div>
 	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
 	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+			<a href="#" id="loginButton" class="btn btn-outline-info btn-md" role="button" data-toggle="modal" data-target="#loginModal">Login&nbsp;登錄</a>
+			<!-- Modal for login panel-->
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLongTitle">User Login&nbsp;用戶登錄</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+							<form>
+							  <div class="form-group">
+							    <label for="exampleInputEmail1">Email address&nbsp;電子郵件地址</label>
+							    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+							  </div>
+							  <div class="form-group">
+							    <label for="exampleInputPassword1">Password&nbsp;密碼</label>
+							    <input type="password" class="form-control" id="InputPassword1" placeholder="Password">
+							  </div>
+							</form>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="submit" class="btn btn-primary">Login&nbsp;登錄</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<!-- content search form -->
+			<form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="text" placeholder="looking for ..." aria-label="Search">
 	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 	    </form>
 	  </div>
@@ -91,6 +124,16 @@
 		    </div>
 		  </div>
 		  <div class="card">
+		    <img class="card-img-top" src="..." alt="Card image cap">
+		    <div class="card-body">
+		      <h4 class="card-title">Card title</h4>
+		      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+		    </div>
+		    <div class="card-footer">
+		      <small class="text-muted">Last updated 3 mins ago</small>
+		    </div>
+		  </div>
+			<div class="card">
 		    <img class="card-img-top" src="..." alt="Card image cap">
 		    <div class="card-body">
 		      <h4 class="card-title">Card title</h4>
