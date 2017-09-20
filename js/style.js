@@ -3,5 +3,5 @@
  */
 //set carousel flash time
  $('.carousel').carousel({
-   interval: 2000;
+   interval: 1000;
  })
